@@ -1,38 +1,14 @@
 // find the vector of del u's that satisfies convergence tolerance
 // and use that vector to find the time of travel
-// create vectors a, b, c of the tridiagonal matrix
-// function: 
 
-
-
-// binning problem function: regression line, use the x values of a linear fit???
-create vectors out of input data 
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
 // decalration of functions
+double GetOptTime(double x0, double u0, double xn, double un);
 
-//returns value of objective function T, i.e., 
- //the matrix of the three vectors in the diagonal, i.e, 
- //the tridiagonal matrix for each iteration
-double GetOptTime(double x0, double u0, double xn, double un)
-{
- int std::vector<double>   = {double d2tduj_dujPlus1(uj, ujPlus1)};
- for(int i = 1; i<=99; i++)
-  {
-// HERE TODO TODO TODO TODO TODO TODO
-   c[i] = c[i]/b[i];
-   double dx = (xn - x0)/100.;
-   double sum_t_jPlusHalf = 0.;3
-   const double g = 9.8;
-   for
-   return 1./sqrt(2.*g) * sum_t_jPlusHalf * dx;
-  //return objectiveFunctionMatrix(a,b,c); //
-  }
-}
-double objectiveFunction()
 // initialize set of starting and ending points
 double x0 = sin(0);
 double u0 = 0.25;
@@ -56,11 +32,10 @@ double GetOptTime(double x0, double u0, double xn, double un)
 {
 
 
-return ; // dummy return value
+return x0+u0+xn+un; // dummy return value
 }
 
 // returns true if convergence tolerance has reached
-
 bool IsConverged(double n2, double n1)
 {
 	if(abs(n2-n1) <= 1e-8) return 1;
